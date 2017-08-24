@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BrainHR It Solutions,Inc</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="libraries/angular-1.6.4/angular-1.6.4/angular.js"></script>
+  <script src="libraries/angular-1.6.4/angular-1.6.4/angular-route.js"></script>
+  <script src="libraries/angular-1.6.4/angular-1.6.4/angular-resource.js"></script>
+  <script  type="text/javascript" src="app.js"></script>
+  <link rel="stylesheet" href="app.css">
+  <script src="home/home.js"></script>
+  <link rel="stylesheet" href="libraries/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="login/login.js"></script>
+
+
+</head>
+<body ng-app="myApp">
+<header id="b1">
+  <div id="logo">
+    <h3>Brain<span>HR</span></h3>
+  </div>
+  <nav>
+    <ul class="position">
+      <li> <a href="#!home">Home</a></li>
+      <li> <a href="#!about">About</a></li>
+      <li> <a href="#!services">Services</a></li>
+      <li> <a href="#!careers">Careers</a></li>
+      <li> <a href="#!contact">Contact</a></li>
+      <li> <a href="#!login">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div ng-view> </div>
+<footer>
+
+  <p class="footer-A">© 2017, All rights received</p> <p class="footer-B"> Designed by BrainHr IT Solutions, Inc</p>
+
+</footer>
+</body>
+</html>
