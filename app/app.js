@@ -34,3 +34,66 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
         });
         $routeProvider.otherwise({redirectTo: '/home'});
 }])
+    .controller('initController',function($scope) {
+
+        $scope.homeStatus="notSelected";
+        $scope.aboutStatus="notSelected";
+        $scope.servicesStatus="notSelected";
+        $scope.careersStatus="notSelected";
+        $scope.contactStatus="notSelected";
+        $scope.loginStatus="notSelected";
+
+        $scope.homeStatusChange = function () {
+             $scope.homeStatus="selected";
+             $scope.aboutStatus="notSelected";
+             $scope.servicesStatus="notSelected";
+             $scope.careersStatus="notSelected";
+             $scope.contactStatus="notSelected";
+             $scope.loginStatus="notSelected";
+            }
+
+        $scope.aboutStatusChange = function (){
+            $scope.homeStatus="notSelected";
+            $scope.aboutStatus="selected";
+            $scope.servicesStatus="notSelected";
+            $scope.careersStatus="notSelected";
+            $scope.contactStatus="notSelected";
+            $scope.loginStatus="notSelected";
+        }
+
+        $scope.servicesStatusChange = function (){
+            $scope.homeStatus="notSelected";
+            $scope.aboutStatus="notSelected";
+            $scope.servicesStatus="selected";
+            $scope.careersStatus="notSelected";
+            $scope.contactStatus="notSelected";
+            $scope.loginStatus="notSelected";
+        }
+
+        $scope.careersStatusChange = function (){
+            $scope.homeStatus="notSelected";
+            $scope.aboutStatus="notSelected";
+            $scope.servicesStatus="notSelected";
+            $scope.careersStatus="selected";
+            $scope.contactStatus="notSelected";
+            $scope.loginStatus="notSelected";
+        }
+
+        $scope.contactStatusChange = function (){
+            $scope.homeStatus="notSelected";
+            $scope.aboutStatus="notSelected";
+            $scope.servicesStatus="notSelected";
+            $scope.careersStatus="notSelected";
+            $scope.contactStatus="selected";
+            $scope.loginStatus="notSelected";
+        }
+
+        $scope.loginStatusChange = function (){
+            $scope.homeStatus="notSelected";
+            $scope.aboutStatus="notSelected";
+            $scope.servicesStatus="notSelected";
+            $scope.careersStatus="notSelected";
+            $scope.contactStatus="notSelected";
+            $scope.loginStatus="selected";
+        }
+    });

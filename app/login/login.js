@@ -6,7 +6,7 @@ angular.module('myApp.login', ['ngResource'])
         });
     })
 .controller('loginController',function($scope,JsonService) {
-
+    $scope.loginStatus="selected";
     $scope.signin = function () {
 
         JsonService.getData(function(data){
