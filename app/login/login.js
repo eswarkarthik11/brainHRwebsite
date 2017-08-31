@@ -23,6 +23,7 @@ angular.module('myApp.login', ['ngResource','ngCookies'])
         });
     })
 
+
         // service to check for passwords and store cookie.
 
     .service('check', function($window,$cookieStore){

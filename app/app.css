@@ -24,13 +24,6 @@ header #logo{
     margin: 0 0 0 10px;
 }
 
-header a{
-    color:white;
-    text-decoration:none;
-    text-transform: uppercase;
-    font-size:16px;
-
-}
 /*
 #b1{
     border-bottom: solid #ffe147 5px;
@@ -38,29 +31,41 @@ header a{
 */
 
 
-nav
-li
-a:hover {
+ul.topPanel
+li:hover {
     color: #FF9F00;
     border-bottom: solid #e38d13;
     text-decoration: none;
     list-style-type: none;
 }
 
-ul
-{
-    float:right;
+ul.topPanel
+li.selected a{
+    color:#FF9F00;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:16px;
 }
 
+ul.topPanel
+li.notSelected a{
+    color:white;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:16px;
+}
+ul.topPanel
+li {
+    display: inline;
+    padding: 0px 20px 0 20px;
+    text-align: center;
+}
 
-.position{
-
+ul.topPanel
+{
     margin-top: 38px;
     margin-right: 20px;
-}
-
-
-header li{
+    float:right;
     display:inline;
     padding:0px 20px 0 20px;
     text-align: center;

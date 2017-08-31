@@ -27,21 +27,19 @@
   <script type="text/javascript" src="login/login.js"></script>
 
 </head>
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="initController">
 <header id="b1">
   <div id="logo">
     <h3>Brain<span>HR</span></h3>
   </div>
-  <nav>
-    <ul class="position">
-      <li> <a href="#!home">Home</a></li>
-      <li> <a href="#!about">About</a></li>
-      <li> <a href="#!services">Services</a></li>
-      <li> <a href="#!careers">Careers</a></li>
-      <li> <a href="#!contact">Contact</a></li>
-      <li> <a href="#!login">Login</a></li>
+    <ul class="topPanel">
+      <li ng-class="homeStatus" ng-click="homeStatusChange()"> <a href="#!home">Home</a></li>
+      <li ng-class="aboutStatus" ng-click="aboutStatusChange()"> <a href="#!about">About</a></li>
+      <li ng-class="servicesStatus" ng-click="servicesStatusChange()"> <a href="#!services">Services</a></li>
+      <li ng-class="careersStatus" ng-click="careersStatusChange()"> <a href="#!careers">Careers</a></li>
+      <li ng-class="contactStatus" ng-click="contactStatusChange()"> <a href="#!contact">Contact</a></li>
+      <li ng-class="loginStatus" ng-click="loginStatusChange()"> <a href="#!login">Login</a></li>
     </ul>
-  </nav>
 </header>
 
 <div ng-view> </div>
