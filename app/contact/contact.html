@@ -1,36 +1,86 @@
 <div  >
     <div class="container">
         <div class="well" style="width:100%">
-            <h1>Contact</h1>
-            <form class="form-horizontal" name="contact" style="width:50%">
+            <div class="row">
+               <div class="col-lg-2"> <h1>Contact</h1></div>
+            </div>
+            <form class="form-horizontal" name="contactForm">
                 <div class="well">
-                    <div class="form-group">
+                    <div class="row">
+                        <div class="col-lg-5">
+                        <div class="form-group">
+                    <div class="col-lg-1">
+                        <span class="fa fa-user fa-fw " style="font-size:25px"></span>
+                        </div>
+                    <div class="col-lg-10">
                     <input type="text" class="form-control"  placeholder="*Name" ng-model="contactName" required>
                     </div>
-                    <div class="form-group">
+                    </div>
+                            <div class="form-group">
+                    <div class="col-lg-1">
+                        <span class="fa fa-envelope-o fa-fw" style="font-size:25px"></span>
+                    </div>
+                    <div class="col-lg-10">
                     <input type="email" class="form-control"  placeholder="*Email" ng-model="contactEmail" required>
                     </div>
-                        <div class="form-group">
+                    </div>
+                            <div class="form-group">
+                                <div class="col-lg-1">
+                                    <span class="fa fa-phone fa-fw" style="font-size:25px"></span>
+                                </div>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control"  placeholder="*Phone" ng-model="contactPhone" required>
+                                </div>
+                            </div>
+                             <div class="form-group">
+                    <div class="col-lg-1">
+                        <span class="fa fa-pencil-square-o" style="font-size:25px"></span>
+                    </div>
+                    <div class="col-lg-10">
                     <textarea rows="4" cols="40" class="form-control" placeholder="*Message" ng-model="contact Message"></textarea>
                         </div>
-                    <div class="form-group">
-                        <div class=" col-lg-6">
-                            <button type="submit" class="btn" ng-click="send()"> <span class="fa fa-paper-plane-o"></span> Send</button>
+                    </div>
+                              <div class="form-group">
+                        <div class=" col-lg-offset-4 col-lg-4">
+                            <button type="submit" class="btn center-block" ng-click="send()"> <span class="fa fa-paper-plane-o"></span> Send</button>
                         </div>
                 </div>
+                    </div>
+                        <div class= "col-lg-6 pull-right" style="font-size:18px">
 
-
+                            <div class="form-group">
+                                <div class="col-lg-offset-6 col-lg-6">
+                                    <div class="center-block">
+                                   <h4><b> Reach us at</b></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="fa fa-map-marker col-lg-offset-5 col-lg-1" style="font-size:22px"> </span>
+                                <div class="col-lg-5" > Brain Hr It Solutions</br>
+                                    suit #216, abctderrssdd</br>
+                                    New Jersey, 08830.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="fa fa-phone  col-lg-offset-5 col-lg-1" style="font-size:22px"> </span>
+                                <div class="col-lg-5" > +1 (504)-541-8933
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="fa fa-envelope  col-lg-offset-5 col-lg-1" style="font-size:22px"> </span>
+                                <div class="col-lg-5" > brainHr@brainhrit.com
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="fa fa-globe col-lg-offset-5 col-lg-1" style="font-size:22px"> </span>
+                                <div class="col-lg-5" > Brainhritsolutions.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
 </div>
