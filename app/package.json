@@ -1,15 +1,6 @@
-{,
-  {
-    "username" :"Eswar" , "password": "karthik1122", "role":"admin"
-  },
-  {
-    "username" :"Ram" , "password": "karthik1122", "role":"user"
-  },
-  {
-    "username" :"naveen" , "password": "karthik1122", "role":"user"
-  },
-  {
-    "username" :"Raj" , "password": "karthik1122", "role":"user"
-  }
 
+  {
+    "username": "eswar@gmail.com",
+    "password": "karthik1122",
+    "role": "admin"
   }

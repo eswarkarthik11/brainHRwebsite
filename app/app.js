@@ -2,8 +2,7 @@
 
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
-    'ngRoute','myApp.login'
-]).
+    'ngRoute','myApp.login']).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
     $locationProvider.hashPrefix('!');
 
@@ -30,6 +29,10 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
         })
         $routeProvider.when('/contact',{
             templateUrl: 'contact/contact.html',
+            controller:""
+        })
+        $routeProvider.when('/admin',{
+            templateUrl: 'admin/admin.html',
             controller:""
         });
         $routeProvider.otherwise({redirectTo: '/home'});
